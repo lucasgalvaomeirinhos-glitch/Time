@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TIME VOID</title>   
+        <meta name="description" content="TIME VOID - Teste de mecânica, mira e fight. Treinos e requisitos para participar.">
+        <meta name="keywords" content="TIME VOID, treino, mecânica, mira, fight">
+        <meta property="og:title" content="TIME VOID">
+        <meta property="og:description" content="Bem-vindo á TIME VOID! Treinos de mecânica, mira e fight.">
+    </head>
+    <style>
+        body {
+            background-image: url('VOID.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            height: 300vh;
+            overflow-y: auto;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        button {
+            background: transparent;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background: white;
+            color: black;
+        }
+    </style> 
+        
+    <body>
+        <h1>Bem-vindo á VOID!</h1>
+        <p>Somos um time de jogadores dedicados em competitivo e em criação de conteúdo.</p>
+        <p> Estamos sempre em busca de novos talentos para se juntar à nossa equipe e crescer juntos no mundo dos jogos competitivos.</p>
+        
+
+        </ul>
+        <button id="treinosBtn">Treinos</button>
+        <button id="requisitosBtn">Requisitos</button>
+        <script>
+            document.getElementById('treinosBtn').addEventListener('click', function() {
+                document.body.innerHTML = `
+                    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; color: white; background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px;">
+                        <h1>Treinos</h1>
+                        <ul>
+                            <li>Quinta-feira às 19:00 horas</li>
+                            <li>Sexta-feira às 19:00 horas</li>
+                            <li>Sábado a tarde toda até às 18:00 horas</li>
+                        </ul>
+                        <button onclick="location.reload()">Voltar</button>
+                    </div>
+                `;
+            });
+            
+            document.getElementById('requisitosBtn').addEventListener('click', function() {
+                document.body.innerHTML = `
+                    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; color: white; background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px;">
+                        <h1>Requisitos para Entrar</h1>
+                        <ul>
+                            <li>Teste de mecânica</li>
+                            <li>Teste de mira</li>
+                            <li>Teste de Fight</li>
+                        </ul>
+                        <button onclick="location.reload()">Voltar</button>
+                    </div>
+                `;
+            });
+        </script>
+    </body>
+</html>
